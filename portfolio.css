@@ -1,0 +1,316 @@
+body {
+
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Nunito",sans-serif;
+}
+nav { 
+
+    display: flex;
+    background-color: #200e3d;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 16px;
+    padding: 0 15px;
+    color: white;
+    transition: uppercase;
+
+}
+nav ul li a:hover {
+    transition: 0.2s;
+    color:rgb(12, 238, 99);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1px;
+}
+h1 {
+    padding-left: 350px;
+}
+.here {
+    padding-top: 70px;
+    padding-left: 40px;
+}
+.here img {
+    border-style: none;
+    border-radius: 20%; /* This will make the image circular */
+    margin: 0 auto;
+    max-width: 200px; /* Adjust the size as needed */
+    display: block;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: left 5px;
+    font-size: 24px;
+    margin: 30px 0px 100px;
+}
+
+.aboutme {
+    width: 70%;
+    max-width: 1100px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 40px 50px 70px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 0px rgb(0 0 0 / 40%), -10px -10px 0px rgb(255 114 114 / 80%);
+}
+
+.aboutme-section {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-content {
+    display: flex;
+    align-items: center;
+}
+
+.aboutme-image {
+    height: 450px;
+    width: 300px;
+    background-image: url("ra.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.aboutme-text {
+    height:fit-content;
+    width: 70%;
+    margin-left: 50px;
+    text-align: left;
+}
+
+#projects {
+    padding: 50px;
+    margin: 5%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.earth-project,
+.bbc-project {
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.earth-project {
+    background-image: url("ind.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bbc-project {
+    background-image: url("bccnews.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.project-image {
+    width: 10%;
+    height: 60%;
+    background-size: cover;
+    background-position: left;
+}
+
+.project-text {
+    padding: 20px;
+    text-align: center;
+    height: 175px;
+    transition: height 0.3s;
+    overflow: hidden;
+}
+
+.project-text:hover {
+    height: 300px;
+    transition: 0.3s;
+}
+
+.project-text h3 {
+    margin-top: 30px;
+}
+
+.content {
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-text:hover .content {
+    opacity: 1;
+}
+
+.button {
+    border: 5px solid lightblue;
+    border-radius: 10px;
+    width: 120px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-text:hover .button {
+    opacity: 1;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+    padding: 75px 0 50px 0;
+    text-align: center;
+    background-color: rgba(3, 3, 3, 45%);
+}
+
+.contact p {
+    margin-bottom: 50px;
+    color: white;
+}
+
+.contact h2,
+.contact p {
+    color: white;
+}
+
+.contact-form {
+    max-width: 800px;
+    display: flex;
+    text-align: left;
+    max-width: 1100px;
+    margin: auto;
+    color: white;
+    }
+
+.contact-form label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.message textarea {
+    border-radius: 5px;
+    border: 0px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.contact-details input {
+    width: 100%;
+    border-radius: 5px;
+    border: 0px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form button {
+    border-radius: 5px;
+    border: 0px;
+    padding: 15px 20px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.message button {
+    color:#00c9ff;
+    border: 0;
+    border-radius: 5px;
+    background:rgb(40, 43, 232);
+    width: 140px;
+    height: 40px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.message button:hover {
+    background: black;
+    color: white;
+    transition: 0.2s;
+}
+
+footer {
+    height: 90px;
+    background: black;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.social-media {
+    font-size: 200%;
+    width: auto;
+    margin-left: 10px;
+}
+
+.social-media a i {
+    color: palevioletred;
+    transition: 0.2s;
+}
+
+.social-media a i:hover {
+    color: rgb(11, 108, 161);
+    transition: 0.2s;
+}
+
+.copyright {
+    color: beige;
+}
